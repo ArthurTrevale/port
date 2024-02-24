@@ -1,0 +1,148 @@
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+  }
+
+  header {
+    height: 100px;
+    background: #fafafa;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+    padding: 2rem;
+  }
+
+  header i {
+    margin-right: 1.5rem;
+  }
+
+  header .img {
+    background: transparent;
+    height: 40px;
+    width: 40px;
+  }
+  .container {
+    background: #eef1f3;
+    height: calc(100vh - 100px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 1.5rem;
+  }
+
+  .container h1 {
+    text-align: center;
+  }
+  .container p {
+    text-align: center;
+  }
+
+  .upload {
+    margin-top: 1rem;
+    border-radius: 30px;
+    height: 50%;
+    max-width: 100%;
+    background: #fafafa;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 1rem 1rem 0 1rem;
+
+    border: 2px dashed #d9d9d9;
+  }
+
+  .upload2 {
+    margin-top: 1rem;
+    border-radius: 30px;
+    height: 50%;
+    max-width: 100%;
+    background: #F6FFED;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 1rem 1rem 0 1rem;
+
+    border: 2px dashed #B7EB8F;
+  }
+
+  .upload3 {
+    margin-top: 1rem;
+    border-radius: 30px;
+    height: 50%;
+    max-width: 100%;
+    background: #ffeded;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 1rem 1rem 0 1rem;
+
+    border: 2px dashed #f78282;
+  }
+
+  .btn {
+    margin-top: 1rem;
+    width: 100%;
+    height: 50px;
+    color: rgba(64, 169, 255, 1);
+    border-color: rgba(64, 169, 255, 1);
+
+    font-size: 20px;
+    opacity: 0.9;
+    text-align: center;
+
+    border-radius: 24px;
+  }
+
+  
+  .custom-upload {
+    color: black; 
+    padding: 10px 20px; 
+  
+    border-radius: 5px;
+    cursor: pointer; 
+  } 
+
+  /* Oculta o botão de upload padrão */
+  .custom-upload input[type="file"] {
+    display: none;
+  } 
+  .img{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 31px;
+    left: 77px;
+  }
+
+  .fail{
+    color: #f52c2c;
+  }
+
+  .sucess{
+    color: #70e21a;
+  }

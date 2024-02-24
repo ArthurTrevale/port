@@ -1,0 +1,46 @@
+
+get infos
+Descrição: Recupera todos os pares chave-valor da configuração
+
+set info
+Descrição: Define um novo valor para uma chave específica na configuração
+Uso: set info chave valor
+Exemplo: "set info usuario JoaoDoe"
+
+get info
+Descrição: Recupera o valor de uma chave específica na configuração
+Uso: get info [chave]
+Exemplo: "get info usuario"
+
+new info
+Descrição: Cria um novo par chave-valor na configuração
+Uso: new info chave valor
+Exemplo: "new info email joao@example.com"
+
+del info
+Descrição: Exclui uma chave e seu valor associado da configuração
+Uso: del info chave
+Exemplo: "del info email"
+
+set color
+Descrição: Define a cor do texto para o console ou prompt de entrada
+Uso: set color [console/input] [cor]
+Exemplo: "set color console azul"
+
+open
+Descrição: Abre um arquivo com o aplicativo padrão
+Uso: open caminho_do_arquivo
+Exemplo: "open C:/Documentos/exemplo.txt"
+
+run/start
+Descrição: Executa a função 'start' no bot
+
+finish/stop
+Descrição: Fecha a janela da aplicação
+
+change theme
+Descrição: Alterna entre os temas escuro e claro
+Uso: change theme
+
+clear
+usado para limpar todos os textos e logs no terminal

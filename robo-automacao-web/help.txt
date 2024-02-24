@@ -1,0 +1,46 @@
+
+get infos
+Description Retrieves all key-value pairs from the configuration
+
+set info
+Description Sets a new value for a given key in the configuration
+Usage set info key value
+Example "set info username JohnDoe"
+
+get info
+Description Retrieves the value of a specific key from the configuration
+Usage get info [key]
+Example "get info username"
+
+new info
+Description Creates a new key-value pair in the configuration
+Usage new info [key] [value]
+Example "new info email john@example.com"
+
+del info
+Description Deletes a key and its associated value from the configuration
+Usage del info [key]
+Example "del info email"
+
+set color
+Description Sets the text color for the console or input prompt
+Usage set color [console/input] [color]
+Example "set color console blue"
+
+open
+Description Opens a file with the default application
+Usage open [file_path]
+Example "open C:/Documents/example.txt"
+
+run/start
+Description Executes start the bot
+
+finish/stop
+Description Closes the application window
+
+change theme
+Description Toggles between dark and light themes
+Usage change theme
+
+clear
+usage to clear all texts and logs in terminal 

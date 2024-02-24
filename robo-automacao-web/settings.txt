@@ -1,0 +1,12 @@
+[Configuracoes]
+user = 2
+password = teste
+url = https://www.facebook.com/?locale=pt_BR
+url2 = 
+url3 = 
+time = 15
+theme = True
+clogin = //*[@id="email"]
+cpassword = //*[@id="pass"]
+captcha = ''
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="static\jc01.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>Huginn</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="https://crm.heymax.io">
+            <i class="fas fa-arrow-left" style ="color:rgba(64,169,255,1)"></i>
+        </a>
+      </div>
+      <div>
+        <a href="https://crm.heymax.io">
+            <img class="img" src="{{ url_for('static', filename='heymax.png') }}">
+        </a>
+      </div>
+    </header>
+
+    <div class="container">
+      <h1>Envie seus Arquivos</h1>
+      <p class="sucess">os arquivos devem ser no formato .xlsx com tamanho máximo 45mb.</p>
+      <div class="sucess"><span>{{ message }}</span></div>
+
+      <div class="upload2" id ="dropArea">
+        <i class="fas fa-upload fa-6x" style="color: rgba(64, 169, 255, 1)"></i>
+
+        <h4>Arraste e solte os arquivos aqui ou se preferir...</h4>
+
+        <form action="/upload" method="post" enctype="multipart/form-data">
+          <input
+            class="custom-upload"
+            type="file"
+            name="files[]"
+            accept=".xlsx, .xls"
+            multiple
+          />
+          <button class="btn" type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+    <script>
+        var dropArea = document.getElementById('dropArea');
+        var uploadForm = document.getElementById('uploadForm');
+    
+        // Impedir o comportamento padrão do navegador de abrir o arquivo ao soltar
+        dropArea.addEventListener('dragover', function(event) {
+            event.preventDefault();
+            dropArea.classList.add('hover');
+        });
+    
+        dropArea.addEventListener('dragenter', function(event) {
+            event.preventDefault();
+            dropArea.classList.add('hover');
+        });
+    
+        dropArea.addEventListener('dragleave', function(event) {
+            dropArea.classList.remove('hover');
+        });
+    
+        dropArea.addEventListener('drop', function(event) {
+            event.preventDefault();
+            dropArea.classList.remove('hover');
+    
+            // Definir o arquivo no input de arquivo
+            var input = dropArea.querySelector('input[type="file"]');
+            input.files = event.dataTransfer.files;
+    
+            // Submeter o formulário quando um arquivo é arrastado e solto
+            uploadForm.submit();
+        });
+
+    </script>
+  </body>
+</html>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+</style>  
